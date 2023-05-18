@@ -14,7 +14,7 @@ function App() {
     { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
   ]);
 
-  const [name, setName] = useState('');
+  // const [name, setName] = useState('');
   const [filter, setFilter] = useState('');
 
   // перше завантаження
