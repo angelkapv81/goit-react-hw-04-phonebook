@@ -9,10 +9,7 @@ import swal from 'sweetalert';
 function App() {
   const [contacts, setContacts] = useState([]);
 
-  // const [name, setName] = useState('');
   const [filter, setFilter] = useState('');
-
-  // перше завантаження
 
   useEffect(() => {
     const localData = localStorage.getItem('contacts');
@@ -23,8 +20,6 @@ function App() {
     }
     // eslint-disable-next-line
   }, []);
-
-  // problem with this
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
