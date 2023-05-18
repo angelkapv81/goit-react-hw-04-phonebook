@@ -25,11 +25,11 @@ function App() {
     } else {
       localStorage.setItem('contacts', JSON.stringify(contacts));
     }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
+
+  // useEffect(() => {
+  //   localStorage.setItem('contacts', JSON.stringify(contacts));
+  // }, [contacts]);
 
   // КОЛИ ОНОВЛЮЄТЬСЯ ДОМ
 
