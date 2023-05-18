@@ -24,6 +24,8 @@ function App() {
     // eslint-disable-next-line
   }, []);
 
+  // problem with this
+
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
