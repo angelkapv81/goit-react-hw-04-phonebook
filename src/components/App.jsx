@@ -15,9 +15,10 @@ function App() {
     const localData = localStorage.getItem('contacts');
     if (localData) {
       setContacts(JSON.parse(localData));
-    } else {
-      localStorage.setItem('contacts', JSON.stringify(contacts));
     }
+    // else {
+    //   localStorage.setItem('contacts', JSON.stringify(contacts));
+    // }
     // eslint-disable-next-line
   }, []);
 
